@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eagle Imports</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+	
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+
+<body ng-controller="testController">
+<script>
+vartestApp = angular  
+    .module("myApp", [])  
+    .controller("testController", function($scope, $http) {  
+        $http.get('http://127.0.0.1:8000/teclados').then(function(response) {  
+            $scope.products = response.data;  
+			
+        });  
+    });  
+</script>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="container">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+                </li>
+						   <li class="nav-item active">
+                    <a class="nav-link" href="index.html">|<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="quemSomos.html">Dúvidas Frequentes</a>
+                </li>
+            
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <h2 class="my-4">Eagle Imports</h2>
+              <div class="list-group">
+                    <a href="mouses.html" class="list-group-item"><img src="https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Mouse-32.png"> Mouses</a>
+                    <a href="teclados.html" class="list-group-item"><img src="http://icons2.iconarchive.com/download/i3998/be-os/be-box/Be-Keyboard.ico"> Teclados</a>
+                    <a href="mousepads.html" class="list-group-item"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQ3JCYxJx8fNT0tMTU3OkQ6LSs1ODU4RjQ5Pi0BCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Njc3NzM3Mzc3NTc1NTM3NzAtNjUxNzU3ODctNzU0N//AABEIACAAIAMBEQACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAEBgIDAQUH/8QAKBAAAgICAQIDCQAAAAAAAAAAAQIDBQQRABIhMUFCBhMiMlJhcYGR/8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMFAAH/xAAoEQACAgICAgECBwEAAAAAAAABAgMEABESMSFBYRNRIjIzcYGR0QX/2gAMAwEAAhEDEQA/AO3vIkY27BR9zzZsEybTFggeQSK5Ub6VOyeCzcVJ+2Eq8mA++YwrTHysdJS4j6vS50Rzkbh0DAd52RODFd9YWkiSDaOG/B4eBivbVNlZWbLJL0YnpO+385NsVZ7EumbSfHf85QgswwRbC7f56zQ3lQKt41TIEjP5DsRybboCsUaJjyJAyjVvGwHWRRxA3lNTWy2WWccyKkgGyW77PBipNYsSK7kEHCluLBBGyICCMYqiks66xQiUHH9Wj4/rlKrTnry/qbT5ydZtwTxfk0/xlvtnJlQRxyQ5BjjPYqDok8Z/0GdEDB+I9+NnF0VR3KlOR9edDFnGw8jKxJ82dmKxL2YnezybBE8ivZZiQAeO++u8ozSLGyV1ABJHLX79YSkWRWJh2kILKwHVxrB64jtAb/CA39d4tSs5krN48kr/AJjnT3GPaoTDsOvzKfLlaCzFOC0Z3kqevJAdSDWSt6mG1SNJmYBG38PnzWK6WFCv1veaCw8DFk7yTVeOa44Kr0xFdduG0SmMx68a1giRg/1Pe95NK+BcAYbL1RBenR51UUIE9dYJdi3P33g1RSwVckrwMx959R8OJr1Y6/L6fvHT2ZJ9c/Wf/9k="> Mousepads</a>
+					<a href="mousebungees.html" class="list-group-item"><img src="http://www.basenotes.net/theperfumeicons/26125169.gif"> Mousebungees</a>
+					<a href="headsets.html" class="list-group-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAALVBMVEX///8AAAC/v7/Pz88PDw9/f3+Pj48/Pz/v7+9fX1+fn5+vr68wMDBPT0/f39+2gumUAAAAuUlEQVQ4jb2SSRKFIAxEbUhkELz/cX9UUAwO9Te+FU26pE0yDN9iQgJSMDdl61Bw9rJOIJaKZTlcOKQe/Hb0+crhEA6R4bp8IH8oT9BJA7iV3H5vJeH0qkVSBuBZD6CzJm14ZcquSckuT8rA0uGxiiiClWGUu/3PQusumGVGVSxT042atWHWKeVuzzWha4OEMO0sjI7wL143dsfymj72+7ARtwbEfh0KVNdW9/FsIHe3+PWJB0rIb/kBgSsC3EIJ33QAAAAASUVORK5CYII="> Headset</a>
+					<a href="fones.html" class="list-group-item"><img src="http://icons.iconarchive.com/icons/multivitamin/multiminimal/32/my-music-icon.png">Fones</a>
+					<a href="acessorios.html" class="list-group-item"><img src="http://www.prada.com/etc/designs/prada/images/base/icon_shopping_bag.svg">Outros Acessórios</a>
+                </div>
+            </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+                    <br>
+
+                <div class="alert alert-info" role="alert">Você está nas categorias de <b>Teclados</b>.  </div>
+
+                <div class="row">
+                    	<div class="col-lg-12">
+
+				<input type="text" class="form-control" ng-model="searchText" placeholder="Pesquisar teclado...">
+				<br>
+				</div>
+               
+
+              
+
+ 
+                    <div class="col-lg-4 col-md-6 mb-4" ng-repeat="x in products | orderBy:'-QtdProduto' | filter:searchText">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{x.ImagemLink}}" alt=""></a>
+                            <div class="card-body">
+                                <h6 class="card-title"><a href="#">{{x.NomeProduto}}</a></h6>
+                                <h5>${{x.PrecoProduto}}</h5>
+                                <p class="card-text"><small>{{x.DescProduto}}.</small></p>
+                            </div>
+                              <div class="card-footer" ng-if="x.QtdProduto == 0">
+							  <button type="button" class="btn btn-default btn-xs" disabled="disabled">Indisponível :(</button>
+                               
+                            </div>
+							 <div class="card-footer" ng-if="x.QtdProduto > 0">
+							  <a href="{{x.ProdutoLink}}"><button type="button" class="btn btn-success btn-xs">Comprar :)</button></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    </div>
+    
+               
+                <!-- /.row -->
+
+            </div>
+            <!-- /.col-lg-9 -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Todos os direitos reservados a Eagle Importados 2017 !</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

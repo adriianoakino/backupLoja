@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eagle Imports - Gerenciamento</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>	
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Sistema de Gerenciamento.</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            
+            <!-- /.navbar-top-links -->
+       <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                 
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> <b>Dashboard</b></a>
+                        </li>
+						
+							<li>
+                            <a href="forms.html"><i class="fa fa-money fa-fw"></i> <b>Vendas</b></a>
+                        </li>
+                  
+                            <li>
+                            <a href="forms.html"><i class="fa fa-users fa-fw"></i> <b>Clientes</b><span class="fa arrow"></span></a>
+							    <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="cadastrarClientes.html"><i class="fa  fa-plus fa-fw"></i> Cadastrar novos clientes.</a>
+                                </li>
+                                <li>
+                                    <a href="gerenciarClientes.html"><i class="fa  fa-gear fa-fw"></i> Gerenciar clientes.</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <a href="forms.html"><i class="fa fa-cogs fa-fw"></i> <b>Funcionários</b><span class="fa arrow"></span></a>
+							    <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="cadastrarFuncionarios.html"><i class="fa  fa-plus fa-fw"></i> Cadastrar funcionários.</a>
+                                </li>
+                                <li>
+                                    <a href="gerenciarFuncionarios.html"><i class="fa  fa-gear fa-fw"></i> Gerenciar funcionários.</a>
+                                </li>
+                            </ul>
+                        </li>
+						        <li>
+                            <a href="forms.html"><i class="fa fa-barcode fa-fw"></i> <b>Produtos</b><span class="fa arrow"></span></a>
+							    <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="cadastrarProdutos.html"><i class="fa  fa-plus fa-fw"></i> Cadastrar novos produtos.</a>
+                                </li>
+                                <li>
+                                    <a href="gerenciarProdutos.html"><i class="fa  fa-gear fa-fw"></i> Gerenciar seus produtos.</a>
+                                </li>
+								                <li>
+                                    <a href="#"><i class="fa  fa-tasks fa-fw"></i> Categorias<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                             <a href="cadastrarCategorias.html"><i class="fa  fa-plus fa-fw"></i> Cadastrar nova categoria.</a>
+                                        </li>
+                                        <li>
+                                            <a href="gerenciarCategorias.html"><i class="fa  fa-gear fa-fw"></i> Gerenciar as categorias. </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+								
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Cadastrar nova ordem de compra.</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+			<div class="row">
+			
+			<div class="col-lg-12">
+			<div class="panel panel-default">
+                        <div class="panel-heading">
+                            Complete abaixo as informações corretas da <b>Ordem de Compra.</b>
+                        </div>
+						
+						<div class="panel-body">
+						    <div class="row">
+                         						  <div class="col-lg-4">
+                                    <form role="form">
+                                          <div class="form-group">
+                                            <label>Nome do produto comprado:</label>
+                                            <select class="form-control">
+                                                
+<option value="Mouses">Deathadder 3.5g</option>
+	<option value="Teclados">QCK Navi</option>
+	<option value="Mousepads">Siberia V2</option>
+	<option value="Mousebungees">CK 104</option>
+
+
+                                            </select>
+                                        </div>
+										</div>
+										
+												
+												  <div class="col-lg-2">
+                                    <form role="form">
+                                          <div class="form-group">
+                                            <label>Categoria:</label>
+                                            <select class="form-control">
+                                                
+<option value="Mouses">Mouses</option>
+	<option value="Teclados">Teclados</option>
+	<option value="Mousepads">Mousepads</option>
+	<option value="Mousebungees">Mousebungees</option>
+	<option value="Headsets">Headsets</option>
+	<option value="Acessórios">Acessórios</option>
+
+                                            </select>
+                                        </div>
+										</div>
+										
+												  <div class="col-lg-3">
+                                    <form role="form">
+                                          <div class="form-group">
+                                            <label>Marca:</label>
+                                            <select class="form-control">
+                                                
+<option value="Mouses">Razer</option>
+	<option value="Teclados">Steelseries</option>
+	<option value="Mousepads">Corsair</option>
+	<option value="Mousebungees">Motospeed</option>
+	<option value="Headsets">Logitech</option>
+	<option value="Acessórios">Cooler Master</option>
+	
+
+                                            </select>
+                                        </div>
+										</div>
+										
+							
+								
+										
+									   <div class="col-lg-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Valor total da compra R$:</label>
+                                            <input class="form-control" type="number">
+                                         
+                                        </div>
+										</div>
+										
+											
+										
+											  <div class="col-lg-3">
+                                    <form role="form">
+                                          <div class="form-group">
+                                            <label>Método de pagamento:</label>
+                                            <select class="form-control">
+                                                
+<option value="Mouses">Cartão de crédito</option>
+	<option value="Teclados">Boleto Bancário</option>
+	<option value="Mousepads">Outros</option>
+
+
+	
+
+                                            </select>
+                                        </div>
+										</div>
+										
+										<div class="col-lg-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Data da Compra:</label>
+                                            <input class="form-control" type="date">
+                                         
+                                        </div>
+										</div>
+										
+												  <div class="col-lg-3">
+                                    <form role="form">
+                                          <div class="form-group">
+                                            <label>Fornecedor:</label>
+                                            <select class="form-control">
+                                                
+<option value="Mouses">Aliexpress</option>
+	<option value="Teclados">e-bay</option>
+	<option value="Mousepads">Alibaba</option>
+	<option value="Mousepads">Outros</option>
+
+
+	
+
+                                            </select>
+                                        </div>
+										</div>
+										   <div class="col-lg-3">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Prazo total p/ entrega (dias):</label>
+                                            <input class="form-control" type="number">
+                                         
+                                        </div>
+										</div>
+										
+									
+										
+										
+									
+										
+								
+								
+										
+								
+										
+								
+										
+								
+											</div>
+											
+											<div class="row">
+											
+											
+											
+												   <div class="col-lg-2">
+										
+										<button type="button" class="btn btn-outline btn-success">Cadastrar a compra.</button>
+											</div>
+											
+														   <div class="col-lg-1">
+										
+										<button type="button" class="btn btn-outline btn-info">Imprimir.</button>
+											</div>
+											
+											   <div class="col-lg-2">
+										
+										<button type="button" class="btn btn-outline btn-default">Limpar Campos.</button>
+											</div>
+											
+											</div>
+											
+											
+											 
+											
+							
+											
+											
+											
+											
+
+										</div>
+										
+						</div>
+						 
+						
+			
+			</div>
+			
+			</div>
+        
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
